@@ -13,7 +13,6 @@ export default function SigninScreen(){
     const navigate = useNavigate()
     const { search } = useLocation();
     const redirectInUrl = new URLSearchParams(search).get("redirect")
-    console.log(redirectInUrl) 
     const redirect = redirectInUrl ? redirectInUrl : "/"
     
     const [email, setEmail] = useState("")

@@ -46,7 +46,6 @@ export default function OrderHistoryScreen() {
             }
         }   
         fetchData();
-        console.log(orders)
     }, [userInfo]);
 
     return(

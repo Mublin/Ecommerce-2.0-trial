@@ -15,7 +15,6 @@ productRouter.get("/", async (req, res)=>{
 
 productRouter.get("/slug/:slug", async (req, res)=>{
     const { slug } = req.params;
-    console.log(slug)
     const product = await Product.findOne({slug: slug})
     if(product){
         return res.status(201).send(product)

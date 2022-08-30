@@ -12,8 +12,7 @@ import { getError } from "../utils";
 export default function SignupScreen(){
     const navigate = useNavigate()
     const { search } = useLocation();
-    const redirectInUrl = new URLSearchParams(search).get("redirect")
-    console.log(redirectInUrl) 
+    const redirectInUrl = new URLSearchParams(search).get("redirect") 
     const redirect = redirectInUrl ? redirectInUrl : "/"
     
     const [fullName, setFullName] = useState("")
