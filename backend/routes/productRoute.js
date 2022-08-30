@@ -6,7 +6,11 @@ const productRouter = express.Router();
 
 productRouter.get("/", async (req, res)=>{
     const products = await Product.find()
+    if (products){
     res.status(201).send(products)
+    } else{
+        res.status(500).send({ message: "Products not Available"})
+    }
 })
 
 productRouter.get("/slug/:slug", async (req, res)=>{
