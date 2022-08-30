@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install && cd ../frontend && npm config set legacy-peer-deps true npm i && npm run build",
-    "start": "node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cd backend && npm install && cd ../frontend && npm config set legacy-peer-deps true npm i react-scripts npm i && npm run build",
+    "start": "node backend/server.js"
   },
   "keywords": [],
   "author": "",
