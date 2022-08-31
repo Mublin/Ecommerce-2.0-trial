@@ -44,5 +44,5 @@ app.use((err, req, res, next)=>{
 
 
 app.listen(process.env.PORT || 3000, ()=>{
-    console.log(`server is working at port ${process.env.port}`)
+    console.log(`server is working at port ${process.env.PORT}`)
 })
