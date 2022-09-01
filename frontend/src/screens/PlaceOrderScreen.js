@@ -46,7 +46,7 @@ export default function PlaceOrderScreen () {
         try {
             dispatch({ type: "CREATE_REQUEST"})
 
-            const {data} = await axios.post(`http://localhost:5090/api/orders`, {
+            const {data} = await axios.post(`/api/orders`, {
                 orderItems: cart.cartItems,
                 shippingAddress: cart.shippingAddress,
                 paymentMethod: cart.paymentMethod,

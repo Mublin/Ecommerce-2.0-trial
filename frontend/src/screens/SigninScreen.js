@@ -24,7 +24,7 @@ export default function SigninScreen(){
     const submitHandler = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post(`http://localhost:5090/api/users/signin`, {
+            const { data } = await axios.post(`/api/users/signin`, {
                 email,
                 password
                 // here we are passing email and password to the backend to check backend, which will be gotten from useState hook

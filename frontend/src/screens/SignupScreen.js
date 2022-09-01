@@ -30,7 +30,7 @@ export default function SignupScreen(){
             return;
         }
         try {
-            const { data } = await axios.post(`http://localhost:5090/api/users/signup`, {
+            const { data } = await axios.post(`/api/users/signup`, {
                 email,
                 password,
                 name: fullName

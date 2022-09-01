@@ -38,7 +38,7 @@ export default function ProfileScreen() {
         dispatch({type: "UPDATE_REQUEST"})
         try {
             if (password === confirmPassword){
-            const {data} = await axios.put(`http://localhost:5090/api/users/profile`, {
+            const {data} = await axios.put(`/api/users/profile`, {
                 name,
                 email,
                 password

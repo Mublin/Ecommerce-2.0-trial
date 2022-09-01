@@ -1,5 +1,6 @@
 {
   "name": "kano-mall",
+  "proxy": "http://localhost:5090",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -67,7 +67,7 @@ export default function OrderScreen(){
         return actions.order.capture().then(async function (details){
             try {
                 dispatch({ type: "PAY_REQUEST"})
-                const { data } = await axios.put(`http://localhost:5090/api/orders/${order._id}/pay`, details,
+                const { data } = await axios.put(`/api/orders/${order._id}/pay`, details,
                 {
                     headers: {
                         authorization: `Bearer ${userInfo.token}`
@@ -90,7 +90,7 @@ export default function OrderScreen(){
         const fetchOrder = async () =>{
             try {
                 dispatch({type:"FETCH_REQUEST"});
-                const {data} = await axios.get(`http://localhost:5090/api/orders/${orderId}`, {
+                const {data} = await axios.get(`/api/orders/${orderId}`, {
                     headers:{
                         authorization: `Bearer ${userInfo.token}`
                     }
@@ -110,7 +110,7 @@ export default function OrderScreen(){
             }
         } else {
             const loadPaypalScript = async () => {
-                const { data: clientId} = await axios.get(`http://localhost:5090/api/keys/paypal`, {
+                const { data: clientId} = await axios.get(`/api/keys/paypal`, {
                     headers: {
                         authorization : `Bearer ${userInfo.token}`
                     }
