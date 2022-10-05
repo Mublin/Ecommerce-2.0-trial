@@ -96,7 +96,7 @@ function App() {
         </Routes>
       </main>
       <footer>
-        <div className='text-center'>All rights reserved Reedwan</div>
+        <div className='text-center'>All rights reserved Amos Gele</div>
       </footer>
     </div>
     </BrowserRouter>
